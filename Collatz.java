@@ -2,7 +2,7 @@
 public class Collatz {
 	public static void main(String args[]) {
 		int limit = Integer.parseInt(args[0]);
-		boolean isVerbose = args[1].charAt(0) == 'v';
+		boolean isVerbose = args[1].equals("v");
 
 		for (int i = 1; i <= limit; i++) {
 			String line = getSequence(i);
