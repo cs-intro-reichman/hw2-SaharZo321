@@ -2,7 +2,14 @@
 
 public class Cheers {
     public static void main(String[] args) {
-        String word = args[0].toUpperCase();
+        String lowercase = "abcdefhijklmnopqrstuvwxyz";
+        String word = args[0];
+        String upperCase ="";
+        for (int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
+            upperCase += lowercase.indexOf(c) != -1 ? (char) (c - 32) : c;
+        }
+        word = upperCase;
         int counter = Integer.parseInt(args[1]);
         String anChars = "AEFHILMNORSX";
         for (int i = 0; i < word.length(); i++) {
@@ -19,4 +26,6 @@ public class Cheers {
             System.out.printf("%s!!!\n", word);
         }
     }
+
+
 }
