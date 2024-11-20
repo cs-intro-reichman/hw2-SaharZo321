@@ -2,7 +2,7 @@
 
 public class Cheers {
     public static void main(String[] args) {
-        String lowercase = "abcdefhijklmnopqrstuvwxyz";
+        String lowercase = "abcdefghijklmnopqrstuvwxyz";
         String word = args[0];
         String upperCase ="";
         for (int i = 0; i < word.length(); i++) {
